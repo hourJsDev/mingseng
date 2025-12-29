@@ -24,10 +24,10 @@ const Navbar = () => {
       name: "Skill",
       path: "/skill",
     },
-    {
-      name: "Portfolio",
-      path: "/portfolio",
-    },
+    // {
+    //   name: "Portfolio",
+    //   path: "/portfolio",
+    // },
     {
       name: "Contact",
       path: "/contact",
