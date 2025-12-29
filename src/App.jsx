@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router"; // or "react-router-dom"
 import Home from "./pages/Home";
-import Layout from "./Layout/Layout";
+import Layout from "./layout/Layout";
 import Introduction from "./pages/Introduction";
 import Education from "./pages/Education";
 import Vision from "./pages/Vision";
