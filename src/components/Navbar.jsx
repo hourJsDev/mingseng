@@ -12,10 +12,10 @@ const Navbar = () => {
       name: "About",
       path: "/about-me",
     },
-    {
-      name: "Vision",
-      path: "/vision",
-    },
+    // {
+    //   name: "Vision",
+    //   path: "/vision",
+    // },
     {
       name: "Education",
       path: "/education",
@@ -23,6 +23,14 @@ const Navbar = () => {
     {
       name: "Skill",
       path: "/skill",
+    },
+    {
+      name: "Experience",
+      path: "/experience",
+    },
+    {
+      name: "Project",
+      path: "/project",
     },
     // {
     //   name: "Portfolio",
@@ -35,15 +43,15 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="fixed top-0 w-full">
+    <div className="fixed z-[99999999999999] top-0 w-full">
       <ul className="flex py-[20px] justify-end pr-[60px] gap-[40px] list-none">
         {menu.map((m) => (
           <Link className="text-red no-underline" to={m.path}>
             <li
               key={m.path}
               className={`${
-                m.path === location.pathname ? "text-[#aa531a]" : "text-red"
-              } hover:text-[#aa531a] text-[20px] fadeUp`}
+                m.path === location.pathname ? "text-[black]" : "text-[#a3a3a1]"
+              } hover:text-[black]  text-[20px] fadeUp`}
             >
               {m.name}
             </li>

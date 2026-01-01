@@ -16,10 +16,4 @@ export const skills = [
 
     description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, nesciunt magni quis ipsum totam minima aspernatur voluptatum est libero ab doloremque, magnam nulla.s`,
   },
-  {
-    title: "Fashion Photographer",
-    exp: 2,
-
-    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, nesciunt magni quis ipsum totam minima aspernatur voluptatum est libero ab doloremque, magnam nulla.s`,
-  },
 ];

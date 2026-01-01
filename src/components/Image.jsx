@@ -1,8 +1,30 @@
+import { PixelatedCanvas } from "./ui/pixelated-canvas";
+
 const Image = ({ image }) => {
   return (
-    <div className="flex bg-[#faf2dd] h-[100dvh] w-[35%] justify-center items-center">
-      <div className="fadeUp w-[300px] aspect-[3/5]  border border-[#aa531a] p-[20px]  overflow-hidden">
-        <img className="w-full h-full  object-cover" src={image} />
+    <div className="flex h-[100dvh] w-[35%] justify-center items-center">
+      <div>
+        <PixelatedCanvas
+          src={image}
+          width={400}
+          height={500}
+          cellSize={3}
+          dotScale={0.9}
+          shape="square"
+          backgroundColor="#000000"
+          dropoutStrength={0}
+          interactive
+          distortionStrength={3}
+          distortionRadius={80}
+          distortionMode="swirl"
+          followSpeed={0.2}
+          jitterStrength={4}
+          jitterSpeed={4}
+          sampleAverage
+          tintColor="#FFFFFF"
+          tintStrength={0.2}
+          className="rounded-xl border border-neutral-800 shadow-lg"
+        />
       </div>
     </div>
   );

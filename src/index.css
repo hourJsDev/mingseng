@@ -10,7 +10,7 @@
 }
 
 .fadeUp {
-  animation: fadeUp .6s ease forwards;
+  animation: fadeUp 0.6s ease forwards;
   transform: translateY(20px);
   opacity: 0;
 }
@@ -25,7 +25,7 @@
   }
 }
 .fadeLeft {
-  animation: fadeLeft .6s ease forwards;
+  animation: fadeLeft 0.6s ease forwards;
   transform: translateX(-20px);
   opacity: 0;
 }
@@ -40,7 +40,7 @@
   }
 }
 .fadeRight {
-  animation: fadeRight .6s ease forwards;
+  animation: fadeRight 0.6s ease forwards;
   transform: translateX(20px);
   opacity: 0;
 }

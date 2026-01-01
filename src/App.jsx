@@ -8,6 +8,10 @@ import Education from "./pages/Education";
 import Vision from "./pages/Vision";
 import Skill from "./pages/Skill";
 import Contact from "./pages/Contact";
+import Experience from "./pages/Experience";
+import ProjectLayout from "./layout/ProjectLayout";
+import Project from "./pages/Project";
+import ProjectDetail from "./pages/ProjectDetail";
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -37,6 +41,24 @@ const App = () => {
         {
           path: "contact",
           element: <Contact />,
+        },
+        {
+          path: "experience",
+          element: <Experience />,
+        },
+        {
+          path: "project",
+          element: <ProjectLayout />,
+          children: [
+            {
+              index: true,
+              element: <Project />,
+            },
+            {
+              path: ":id",
+              element: <ProjectDetail />,
+            },
+          ],
         },
       ],
     },

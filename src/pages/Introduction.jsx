@@ -1,15 +1,41 @@
 import React from "react";
 import Image from "../components/Image";
+import SengImage from "../assets/seng-2.jpg";
+import { Cover } from "@/components/ui/cover";
+import { PixelatedCanvas } from "@/components/ui/pixelated-canvas";
 
 const Introduction = () => {
   return (
     <div className="flex">
-      <Image image="https://i.pinimg.com/736x/43/cb/61/43cb612f69cdb5d5bef317650528b302.jpg" />
-      <div className="flex h-[100dvh] flex-1 justify-center items-center">
+      <div className="flex gap-[40px] h-[100dvh] flex-1 justify-center items-center">
+        <div>
+          <PixelatedCanvas
+            src={SengImage}
+            width={400}
+            height={500}
+            cellSize={3}
+            dotScale={0.9}
+            shape="square"
+            backgroundColor="#000000"
+            dropoutStrength={0}
+            interactive
+            distortionStrength={3}
+            distortionRadius={80}
+            distortionMode="swirl"
+            followSpeed={0.2}
+            jitterStrength={4}
+            jitterSpeed={4}
+            sampleAverage
+            tintColor="#FFFFFF"
+            tintStrength={0.2}
+          />
+        </div>
         <div className="flex flex-col gap-[50px]">
-          <h1 className="fadeUp text-[100px] leading-none text-[#aa531a]">About Me</h1>
+          <h1 className="fadeUp text-[70px] leading-none text-[#aa531a]">
+            <Cover>About Me</Cover>
+          </h1>
           <div>
-            <p className="fadeUp min-w-[100px] max-w-[800px] text-[20px]">
+            <p className="fadeUp min-w-[100px] max-w-[600px] text-[20px]">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
               nesciunt magni quis ipsum totam minima aspernatur voluptatum est
               libero ab doloremque, magnam nulla. Cupiditate, maxime nostrum
