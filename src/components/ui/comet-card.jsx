@@ -76,7 +76,7 @@ export const CometCard = ({
   return (
     <div
       className={cn(
-        "perspective-distant cursor-pointer transform-3d",
+        "perspective-distant fadeUp cursor-pointer transform-3d",
         className
       )}
     >

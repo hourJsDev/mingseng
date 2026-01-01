@@ -25,7 +25,7 @@ const ProjectSlider = () => {
     },
   ];
   return (
-    <div className="relative overflow-hidden w-full h-full py-20">
+    <div className="relative w-full h-full py-20">
       <Carousel slides={slideData} />
     </div>
   );

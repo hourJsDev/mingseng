@@ -50,7 +50,10 @@ const Contact = () => {
           </h1>
           <ul className="list-none flex-col flex gap-[10px]">
             {contacts.map((c, index) => (
-              <li className="flex group cursor-pointer items-center gap-[15px]">
+              <li
+                key={index}
+                className="flex fadeUp group cursor-pointer items-center gap-[15px]"
+              >
                 <span className="w-[40px] h-[40px] rounded-full flex justify-center items-center  bg-[black]">
                   {c.icon}
                 </span>

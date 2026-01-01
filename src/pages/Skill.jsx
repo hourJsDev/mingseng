@@ -8,7 +8,7 @@ const Skill = () => {
     <div className="flex">
       <div className="flex h-[100dvh] flex-1 justify-center items-center">
         <div className="flex px-[100px] flex-col gap-[50px]">
-          <h1 className="text-[130px] leading-none ">
+          <h1 className="text-[130px] text-center leading-none ">
             <Cover>SKIll</Cover>
           </h1>
           <div className="flex gap-[20px] flex-wrap">

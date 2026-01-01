@@ -8,7 +8,7 @@ const Education = () => {
     <div className="flex">
       <div className="flex h-[100dvh] flex-1 justify-center items-center">
         <div className="flex px-[100px] flex-col gap-[50px]">
-          <h1 className="text-[100px] leading-none text-[#aa531a]">
+          <h1 className="text-[100px] text-center leading-none text-[#aa531a]">
             <Cover>EDUCATION</Cover>
           </h1>
           <div className="flex gap-[20px] flex-wrap">
