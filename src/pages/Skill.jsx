@@ -5,12 +5,10 @@ import { Cover } from "@/components/ui/cover";
 import { CometCard } from "@/components/ui/comet-card";
 const Skill = () => {
   return (
-    <div className="flex">
-      <div className="flex h-[100dvh] flex-1 justify-center items-center">
+    <div id="skill" className="flex">
+      <div className="flex  flex-1 justify-center items-center">
         <div className="flex px-[100px] flex-col gap-[50px]">
-          <h1 className="text-[130px] text-center leading-none ">
-            <Cover>SKIll</Cover>
-          </h1>
+          <h1 className="text-[130px] text-center leading-none ">SKIll</h1>
           <div className="flex gap-[20px] flex-wrap">
             {skills.map((skill) => (
               <CometCard key={skill.title}>

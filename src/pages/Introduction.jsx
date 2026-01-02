@@ -6,7 +6,7 @@ import { PixelatedCanvas } from "@/components/ui/pixelated-canvas";
 
 const Introduction = () => {
   return (
-    <div className="flex">
+    <div id="about-me" className="flex">
       <div className="flex gap-[40px] h-[100dvh] flex-1 justify-center items-center">
         <div>
           <PixelatedCanvas
@@ -31,9 +31,7 @@ const Introduction = () => {
           />
         </div>
         <div className="flex flex-col gap-[50px]">
-          <h1 className="fadeUp text-[70px] leading-none text-[#aa531a]">
-            <Cover>About Me</Cover>
-          </h1>
+          <h1 className="fadeUp text-[70px] leading-none">About Me</h1>
           <div>
             <p className="fadeUp min-w-[100px] max-w-[600px] text-[20px]">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,

@@ -5,10 +5,10 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-w
 
 const Layout = () => {
   return (
-    <BackgroundBeamsWithCollision>
+    <div>
       <Navbar />
       <Outlet />
-    </BackgroundBeamsWithCollision>
+    </div>
   );
 };
 

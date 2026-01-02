@@ -46,7 +46,10 @@ const Navbar = () => {
     <div className="fixed z-[99999999999999] top-0 w-full">
       <ul className="flex py-[20px] justify-end pr-[60px] gap-[40px] list-none">
         {menu.map((m) => (
-          <Link className="text-red no-underline" to={m.path}>
+          <a
+            className="text-red no-underline"
+            href={`#${m.path.replace("/", "")}`}
+          >
             <li
               key={m.path}
               className={`${
@@ -55,7 +58,7 @@ const Navbar = () => {
             >
               {m.name}
             </li>
-          </Link>
+          </a>
         ))}
       </ul>
     </div>

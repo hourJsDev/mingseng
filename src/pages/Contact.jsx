@@ -21,8 +21,8 @@ const Contact = () => {
     },
   ];
   return (
-    <div className="flex">
-      <div className="flex h-[100dvh] flex-1 justify-center items-center">
+    <div id="contact" className="flex">
+      <div className="flex w-full mt-[30px] mb-[30px] flex-1 justify-center items-center">
         <div className="flex flex-col gap-[10px]">
           <PixelatedCanvas
             src={SengImage}

@@ -3,7 +3,7 @@ import ProjectSlider from "../components/ProjectSlider";
 
 const Project = () => {
   return (
-    <div className="h-[100dvh]">
+  <div id="project" className="h-[100dvh] overflow-hidden">
       <ProjectSlider />
     </div>
   );
