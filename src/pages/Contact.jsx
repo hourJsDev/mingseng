@@ -5,6 +5,7 @@ import { MdEmail } from "react-icons/md";
 import SengImage from "../assets/seng-3.jpg";
 import { PixelatedCanvas } from "@/components/ui/pixelated-canvas";
 import { Cover } from "@/components/ui/cover";
+import DitherShader from "@/components/ui/dither-shader";
 const Contact = () => {
   const contacts = [
     {
@@ -21,33 +22,21 @@ const Contact = () => {
     },
   ];
   return (
-    <div id="contact" className="flex">
+    <div id="contact" className="flex mt-[50px] px-0">
       <div className="flex w-full mt-[30px] mb-[30px] flex-1 justify-center items-center">
         <div className="flex flex-col gap-[10px]">
-          <PixelatedCanvas
+          <p className="text-center text-[30px]">LET'S COLLABORATE</p>
+
+          <DitherShader
             src={SengImage}
-            width={800}
-            height={400}
-            cellSize={3}
-            dotScale={0.9}
-            shape="square"
-            backgroundColor="#000000"
-            dropoutStrength={0}
-            interactive
-            distortionStrength={3}
-            distortionRadius={80}
-            distortionMode="swirl"
-            followSpeed={0.2}
-            jitterStrength={4}
-            jitterSpeed={4}
-            sampleAverage
-            tintColor="#FFFFFF"
-            tintStrength={0.2}
-            className="shadow-lg"
+            gridSize={1}
+            ditherMode="bayer"
+            colorMode="duotone"
+            primaryColor="#1e3a5f"
+            secondaryColor="#f0e68c"
+            threshold={0.45}
+            className="shadow-lg w-[400px] h-[200px] sm:w-[800px] sm:h-[400px]"
           />
-          <h1 className="text-[40px]">
-            <Cover>LET'S COLLABORATE</Cover>
-          </h1>
           <ul className="list-none flex-col flex gap-[10px]">
             {contacts.map((c, index) => (
               <li

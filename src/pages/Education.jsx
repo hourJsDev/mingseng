@@ -1,8 +1,4 @@
 import React from "react";
-import Image from "../components/Image";
-import { educations } from "../data/Education";
-import { Cover } from "@/components/ui/cover";
-import { CometCard } from "@/components/ui/comet-card";
 import { Timeline } from "@/components/ui/timeline";
 const Education = () => {
   const data = [
@@ -10,7 +6,7 @@ const Education = () => {
       title: "High School",
       content: (
         <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          <p className="mb-[2px] sm:text-[30px] font-normal text-neutral-800  dark:text-neutral-200">
             Mean Chey High School
           </p>
           <div className="grid grid-cols-2 gap-4">
@@ -36,7 +32,7 @@ const Education = () => {
       title: "Bachelor Degree of Multimedia",
       content: (
         <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          <p className="mb-[2px] sm:text-[30px] font-normal text-neutral-800  dark:text-neutral-200">
             Norton University 2020 - Present
           </p>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
@@ -72,26 +68,6 @@ const Education = () => {
               alias ipsam laudantium,`}
         data={data}
       />
-      {/* <div className="flex flex-1 justify-center items-center">
-        <div className="flex px-[100px] flex-col gap-[50px]">
-          <h1 className="text-[100px] text-center leading-none text-[#aa531a]">
-            <Cover>EDUCATION</Cover>
-          </h1>
-          <div className="flex gap-[20px] flex-wrap">
-            {educations.map((edu) => (
-              <CometCard className={"p-[20px]"}>
-                <div className="w-[400px]" key={edu.schoolName}>
-                  <p>
-                    {edu.startYear} - {edu.endYear}
-                  </p>
-                  <h2 className="text-[30px] font-bold">{edu.schoolName}</h2>
-                  <p className="mt-P[10px] text-[gray]">{edu.description}</p>
-                </div>
-              </CometCard>
-            ))}
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

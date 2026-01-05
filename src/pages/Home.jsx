@@ -15,7 +15,7 @@ const Home = () => {
   const words = ["Photographer", "Video Editor", "Content Creator"];
   return (
     <section>
-      <div className="flex flex-col h-[100dvh] gap-[30px] justify-center items-center">
+      <div className="flex flex-col sm:h-[100dvh] gap-[30px] justify-center items-center">
         <div className="flex gap-3">
           <DitherShader
             src={SengImage}
@@ -25,7 +25,7 @@ const Home = () => {
             primaryColor="#1e3a5f"
             secondaryColor="#f0e68c"
             threshold={0.45}
-            className=" w-[400px] h-[500px]"
+            className="max-sm:hidden w-[400px] sm:w-[100] h-[500px]"
           />
           <PixelatedCanvas
             src={SengImage}
@@ -59,15 +59,12 @@ const Home = () => {
             primaryColor="#000000"
             secondaryColor="#f5f5f5"
             threshold={0.5}
-            className=" w-[400px] h-[500px]"
+            className="max-sm:hidden w-[400px] h-[500px]"
           />
         </div>
         <div className="">
           <div>
-            <h1>
-              <Cover className={"text-[30px]"}> I am</Cover>
-            </h1>
-            <h1 className=" text-[80px]  leading-none">
+            <h1 className="text-[30px] sm:text-[40px]  leading-none">
               <FlipWords words={words} />
             </h1>
           </div>

@@ -1,39 +1,28 @@
 import React from "react";
 import Image from "../components/Image";
 import SengImage from "../assets/seng-2.jpg";
-import { Cover } from "@/components/ui/cover";
-import { PixelatedCanvas } from "@/components/ui/pixelated-canvas";
+import DitherShader from "@/components/ui/dither-shader";
 
 const Introduction = () => {
   return (
-    <div id="about-me" className="flex">
-      <div className="flex gap-[40px] h-[100dvh] flex-1 justify-center items-center">
+    <div id="about-me" className="flex mt-[50px]">
+      <div className="flex sm:flex-row flex-col-reverse gap-[40px] flex-1 justify-center items-center">
         <div>
-          <PixelatedCanvas
+          <DitherShader
             src={SengImage}
-            width={400}
-            height={500}
-            cellSize={3}
-            dotScale={0.9}
-            shape="square"
-            backgroundColor="#000000"
-            dropoutStrength={0}
-            interactive
-            distortionStrength={3}
-            distortionRadius={80}
-            distortionMode="swirl"
-            followSpeed={0.2}
-            jitterStrength={4}
-            jitterSpeed={4}
-            sampleAverage
-            tintColor="#FFFFFF"
-            tintStrength={0.2}
+            gridSize={1}
+            ditherMode="bayer"
+            colorMode="duotone"
+            primaryColor="#1e3a5f"
+            secondaryColor="#f0e68c"
+            threshold={0.45}
+            className=" w-[400px] h-[500px]"
           />
         </div>
-        <div className="flex flex-col gap-[50px]">
-          <h1 className="fadeUp text-[70px] leading-none">About Me</h1>
+        <div className="flex sm:p-0 p-[10px] flex-col gap-[10px] sm:gap-[50px]">
+          <h1 className="fadeUp text-3xl sm:text-4xl leading-none">About Me</h1>
           <div>
-            <p className="fadeUp min-w-[100px] max-w-[600px] text-[20px]">
+            <p className="fadeUp min-w-[100px] max-w-[600px] text-neutral-700 dark:text-neutral-300 text-sm md:text-base ">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
               nesciunt magni quis ipsum totam minima aspernatur voluptatum est
               libero ab doloremque, magnam nulla. Cupiditate, maxime nostrum

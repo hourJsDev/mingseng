@@ -1,8 +1,4 @@
 import React from "react";
-import Image from "../components/Image";
-import { educations } from "../data/Education";
-import { Cover } from "@/components/ui/cover";
-import { CometCard } from "@/components/ui/comet-card";
 import { Timeline } from "@/components/ui/timeline";
 const Experience = () => {
   const data = [
@@ -10,7 +6,7 @@ const Experience = () => {
       title: "Graphic Design",
       content: (
         <div>
-          <p className="mb-[2px] text-[30px] font-normal text-neutral-800  dark:text-neutral-200">
+          <p className="mb-[2px] sm:text-[30px]  font-normal text-neutral-800  dark:text-neutral-200">
             Company Name
           </p>
           <p>2 years experienced</p>
@@ -37,7 +33,7 @@ const Experience = () => {
       title: "Video Editor",
       content: (
         <div>
-          <p className="mb-[2px] text-[30px] font-normal text-neutral-800  dark:text-neutral-200">
+          <p className="mb-[2px] sm:text-[30px]  font-normal text-neutral-800  dark:text-neutral-200">
             Company Name
           </p>
           <p>2 years experienced</p>
@@ -64,7 +60,7 @@ const Experience = () => {
       title: "Photographer",
       content: (
         <div>
-          <p className="mb-[2px] text-[30px] font-normal text-neutral-800  dark:text-neutral-200">
+          <p className="mb-[2px] sm:text-[30px]  font-normal text-neutral-800  dark:text-neutral-200">
             Company Name
           </p>
           <p>2 years experienced</p>
