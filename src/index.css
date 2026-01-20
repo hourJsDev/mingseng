@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 * {
-  font-family: "Share Tech", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #000000;
   margin: 0;
   padding: 0;

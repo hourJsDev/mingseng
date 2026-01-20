@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react"; // Optional: for icons
+import Logo from "./Logo";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(true);
@@ -36,10 +37,8 @@ const Navbar = () => {
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-end items-center">
-        {/* Logo/Brand Area */}
-        {/* <div className="text-2xl font-bold text-red-600">Logo</div> */}
-
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <Logo />
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-10 list-none">
           {menu.map((m) => (

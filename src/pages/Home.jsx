@@ -71,8 +71,8 @@ const Home = () => {
         </div>
       </div>
       <Introduction />
-      <Education />
       <Skill />
+      <Education />
       <Experience />
       <Project />
       <Contact />

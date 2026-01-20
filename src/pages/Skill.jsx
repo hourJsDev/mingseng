@@ -2,7 +2,10 @@ import React from "react";
 import { skills } from "../data/Skill";
 const Skill = () => {
   return (
-    <div id="skill" className="flex sm:mt-0 mt-[20px] mx-auto px-4 max-w-7xl">
+    <div
+      id="skill"
+      className="flex sm:mt-[70px] mt-[20px] mx-auto px-4 max-w-7xl"
+    >
       <div className="flex flex-1 justify-center items-center">
         <div className="flex  flex-col gap-[20px] sm:gap-[50px]">
           <div>

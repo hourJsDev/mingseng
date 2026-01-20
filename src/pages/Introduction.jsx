@@ -19,20 +19,15 @@ const Introduction = () => {
             className=" w-[400px] h-[500px]"
           />
         </div>
-        <div className="flex sm:p-0 p-[10px] flex-col gap-[10px] sm:gap-[50px]">
+        <div className="flex sm:p-0 p-[10px] flex-col gap-[10px] sm:gap-[20px]">
           <h1 className="fadeUp text-3xl sm:text-4xl leading-none">About Me</h1>
           <div>
-            <p className="fadeUp min-w-[100px] max-w-[600px] text-neutral-700 dark:text-neutral-300 text-sm md:text-base ">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
-              nesciunt magni quis ipsum totam minima aspernatur voluptatum est
-              libero ab doloremque, magnam nulla. Cupiditate, maxime nostrum
-              alias ipsam laudantium, est eum id labore commodi optio expedita
-              repellat provident quo libero delectus molestias ducimus, officia
-              quisquam aliquid architecto distinctio asperiores consequatur!
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
-              numquam debitis, omnis quaerat ipsam aliquam, sit quo autem
-              dignissimos aperiam voluptate at quia ipsum hic odit blanditiis
-              ab! Sint, assumenda.
+            <p className="fadeUp min-w-[100px] max-w-[500px] text-neutral-700 dark:text-neutral-300 text-sm md:text-base ">
+              I have over 3 years of experience working in media, with a strong
+              focus on video editing, shooting, script writing, photography, 3D
+              animation, and color grading, My work reflects both technical
+              skill and creative storytelling, developed through hands-on
+              projects across various media platforms.
             </p>
           </div>
         </div>
