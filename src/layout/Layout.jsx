@@ -1,12 +1,11 @@
 import React from "react";
-import { Outlet } from "react-router";
+import { Outlet, useLocation } from "react-router";
 import Navbar from "../components/Navbar";
-import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
-
 const Layout = () => {
+  const location = useLocation();
   return (
     <div>
-      <Navbar />
+      {!location.pathname.includes("project") && <Navbar />}
       <Outlet />
     </div>
   );
