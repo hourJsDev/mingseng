@@ -19,7 +19,7 @@ const Education = () => {
     {
       name: "Bachelor Degree of Creative Multimedia at Norton University",
       description: "I was graduation at Norton University.",
-      tags: ["Film directing", "Photography", "Video editing"],
+      tags: ["Film directing", "Photography", "Video editing", "3D Animation"],
       date: "2025",
       image: [],
     },

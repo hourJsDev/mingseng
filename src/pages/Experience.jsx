@@ -15,7 +15,7 @@ const Experience = () => {
       description:
         "I have the opportunity to work with R Plus Studio as a video production specialist.",
       tags: [],
-      date: "2024",
+      date: "2022",
       image: [],
     },
 
