@@ -1,0 +1,88 @@
+.container {
+  position: fixed;
+  right: 2%;
+  bottom: 100px;
+  cursor: pointer;
+  transition: all .4s cubic-bezier(0.87, 0, 0.13, 1);
+  transform: translateY(var(--y));
+  z-index: 10000000;
+  pointer-events: var(--eventPointer);
+  opacity: var(--opacity);
+}
+.buttonContainer {
+  position: relative;
+}
+.dot {
+  height: 5px;
+  position: absolute;
+  width: 1px;
+  background: #000000;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-54%);
+  animation: animation1 0.6s ease alternate infinite;
+}
+.button {
+  width: 23px;
+  border: 1px solid #000000;
+  border-radius: 39px;
+  height: 38px;
+}
+[data-dark="on"] .button {
+    background-color: #000000;
+  border-color: #fff;
+}
+[data-dark="on"] .dot {
+    background: #fff;
+}
+[data-hidechat="true"] .container{
+  transform: translate(300%,var(--y)) !important;
+}
+.arrowContainer {
+  position: relative;
+  display: flex;
+  gap: 0;
+  flex-direction: column;
+  align-items: center;
+}
+.arrow {
+  font-size: 16px;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  color: #000000;
+
+  top: -18px;
+}
+.arrow:last-child {
+  top: -28px;
+  animation: animation2 0.8s ease  infinite;
+}
+.arrow:first-child {
+  animation: animation3 0.8s ease  infinite;
+}
+
+@keyframes animation1 {
+  0% {
+    transform: translate(-50%, -2px);
+  }
+  100% {
+    transform: translate(-50%, 2px);
+  }
+}
+@keyframes animation2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animation3 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
