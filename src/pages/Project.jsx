@@ -15,6 +15,24 @@ import photoDonation4 from "../assets/photo-donation/4.jpg";
 import photoDonation5 from "../assets/photo-donation/5.jpg";
 import photoDonation6 from "../assets/photo-donation/6.jpg";
 
+import streePhoto1 from "../assets/streetphoto/1.jpg";
+import streePhoto2 from "../assets/streetphoto/2.jpg";
+import streePhoto3 from "../assets/streetphoto/3.jpg";
+import streePhoto4 from "../assets/streetphoto/4.jpg";
+import streePhoto5 from "../assets/streetphoto/5.jpg";
+import streePhoto6 from "../assets/streetphoto/6.jpg";
+import streePhoto7 from "../assets/streetphoto/7.jpg";
+import streePhoto8 from "../assets/streetphoto/8.jpg";
+
+import photoAds1 from "../assets/photo-ads/1.jpg";
+import photoAds2 from "../assets/photo-ads/2.jpg";
+import photoAds3 from "../assets/photo-ads/3.jpg";
+import photoAds4 from "../assets/photo-ads/4.jpg";
+
+import photoEvent1 from "../assets/photo-event/1.jpg";
+import photoEvent2 from "../assets/photo-event/2.jpg";
+import photoEvent3 from "../assets/photo-event/3.jpg";
+
 const Project = () => {
   const [categoryId, setCategoryId] = useState(1);
   const [selectedImage, setSelectedImage] = useState("");
@@ -46,6 +64,14 @@ const Project = () => {
     {
       id: 7,
       name: "Photo Event",
+    },
+    {
+      id: 8,
+      name: "Street Photo",
+    },
+    {
+      id: 9,
+      name: "Photo Ads",
     },
   ];
   const source = [
@@ -86,6 +112,14 @@ const Project = () => {
       src: "https://www.youtube.com/embed/sGtnF-iiXy0",
     },
     {
+      categoryId: [3, 8],
+      src: streePhoto1,
+    },
+    {
+      categoryId: [3, 8],
+      src: streePhoto2,
+    },
+    {
       categoryId: [3],
       src: metophoum1,
     },
@@ -114,28 +148,81 @@ const Project = () => {
       src: metophoum7,
     },
     {
-      categoryId: [3, 7],
+      categoryId: [3],
       src: photoDonation1,
     },
     {
-      categoryId: [3, 7],
+      categoryId: [3],
       src: photoDonation2,
     },
     {
-      categoryId: [3, 7],
+      categoryId: [3],
       src: photoDonation3,
     },
     {
-      categoryId: [3, 7],
+      categoryId: [3],
       src: photoDonation4,
     },
     {
-      categoryId: [3, 7],
+      categoryId: [3],
       src: photoDonation5,
     },
     {
-      categoryId: [3, 7],
+      categoryId: [3],
       src: photoDonation6,
+    },
+
+    {
+      categoryId: [3, 8],
+      src: streePhoto3,
+    },
+    {
+      categoryId: [3, 8],
+      src: streePhoto4,
+    },
+    {
+      categoryId: [3, 8],
+      src: streePhoto5,
+    },
+    {
+      categoryId: [3, 8],
+      src: streePhoto6,
+    },
+    {
+      categoryId: [3, 8],
+      src: streePhoto7,
+    },
+    {
+      categoryId: [3, 8],
+      src: streePhoto8,
+    },
+    {
+      categoryId: [3, 9],
+      src: photoAds1,
+    },
+    {
+      categoryId: [3, 9],
+      src: photoAds2,
+    },
+    {
+      categoryId: [3, 9],
+      src: photoAds3,
+    },
+    {
+      categoryId: [3, 9],
+      src: photoAds4,
+    },
+    {
+      categoryId: [3, 7],
+      src: photoEvent1,
+    },
+    {
+      categoryId: [3, 7],
+      src: photoEvent2,
+    },
+    {
+      categoryId: [3, 7],
+      src: photoEvent3,
     },
   ];
   useEffect(() => {
@@ -162,7 +249,7 @@ const Project = () => {
     setSelectedImage("");
   };
   return (
-    <div className="px-[10px] sm:px-[10%] pt-[80px] flex flex-col gap-[10px]">
+    <div className="px-[10px] pb-[20px] sm:px-[10%] pt-[80px] flex flex-col gap-[10px]">
       <div>
         <ul className="flex overflow-auto gap-[10px]">
           {categories.map((c, index) => (

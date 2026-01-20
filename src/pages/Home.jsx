@@ -11,56 +11,24 @@ import Skill from "./Skill";
 import Experience from "./Experience";
 import Project from "./Project";
 import Contact from "./Contact";
+import Background from "../assets/streetphoto/7.jpg";
+import Background2 from "../assets/streetphoto/6.jpg";
+import Background3 from "../assets/streetphoto/8.jpg";
 const Home = () => {
-  const words = ["Photographer", "Video Editor", "Content Creator"];
+  const words = ["Photographer", "Editing & Videographer", "Content Creator"];
   return (
     <section>
-      <div className="flex flex-col sm:h-[100dvh] gap-[30px] justify-center items-center">
-        <div className="flex gap-3">
-          <DitherShader
-            src={SengImage}
-            gridSize={1}
-            ditherMode="bayer"
-            colorMode="duotone"
-            primaryColor="#1e3a5f"
-            secondaryColor="#f0e68c"
-            threshold={0.45}
-            className="max-sm:hidden w-[400px] sm:w-[100] h-[500px]"
-          />
-          <PixelatedCanvas
-            src={SengImage}
-            width={400}
-            height={500}
-            cellSize={3}
-            dotScale={0.9}
-            shape="square"
-            backgroundColor="#000000"
-            dropoutStrength={0}
-            interactive
-            distortionStrength={3}
-            distortionRadius={80}
-            distortionMode="swirl"
-            followSpeed={0.2}
-            jitterStrength={4}
-            jitterSpeed={4}
-            sampleAverage
-            tintColor="#FFFFFF"
-            tintStrength={0.2}
-            className="shadow-lg"
-          />
-          <DitherShader
-            src={SengImage}
-            gridSize={2}
-            ditherMode="bayer"
-            colorMode="grayscale"
-            invert={false}
-            animated={false}
-            animationSpeed={0.02}
-            primaryColor="#000000"
-            secondaryColor="#f5f5f5"
-            threshold={0.5}
-            className="max-sm:hidden w-[400px] h-[500px]"
-          />
+      <div className="flex sm:pt-0 pt-[50px] flex-col sm:h-[100dvh] gap-[30px] justify-center items-center">
+        <div className="flex gap-[10px]">
+          <div className="flex max-w-[500px] gap-3">
+            <img className="w-full" src={Background} />
+          </div>
+          <div className="flex max-w-[500px] gap-3">
+            <img className="w-full" src={Background2} />
+          </div>
+          <div className="flex max-w-[500px] gap-3">
+            <img className="w-full" src={Background3} />
+          </div>
         </div>
         <div className="">
           <div>
@@ -71,7 +39,6 @@ const Home = () => {
         </div>
       </div>
       <Introduction />
-      <Skill />
       <Education />
       <Experience />
       <Contact />

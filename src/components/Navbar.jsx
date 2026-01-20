@@ -48,7 +48,7 @@ const Navbar = () => {
               <p
                 className={`text-gray-700 ${
                   m.path.includes(location.pathname) && "underline"
-                } hover:text-black text-lg no-underline transition-colors`}
+                } hover:text-black font-bold text-lg no-underline transition-colors`}
               >
                 {m.name}
               </p>
