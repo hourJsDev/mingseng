@@ -74,7 +74,6 @@ const Home = () => {
       <Skill />
       <Education />
       <Experience />
-      <Project />
       <Contact />
     </section>
   );

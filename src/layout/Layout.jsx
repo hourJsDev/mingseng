@@ -1,13 +1,13 @@
 import React from "react";
 import { Outlet } from "react-router";
 import Navbar from "../components/Navbar";
-import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
-
+import ToTopButton from "@/components/ToTopButton";
 const Layout = () => {
   return (
     <div>
       <Navbar />
       <Outlet />
+      <ToTopButton />
     </div>
   );
 };

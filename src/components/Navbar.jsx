@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react"; // Optional: for icons
-import Logo from "./Logo";
+import { Link, useLocation } from "react-router";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const location = useLocation();
   const menu = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about-me" },
-    { name: "Education", path: "/education" },
-    { name: "Skill", path: "/skill" },
-    { name: "Experience", path: "/experience" },
+    // { name: "About", path: "/about-me" },
+    // { name: "Education", path: "/education" },
+    // { name: "Skill", path: "/skill" },
+    // { name: "Experience", path: "/experience" },
     { name: "Project", path: "/project" },
-    { name: "Contact", path: "/contact" },
+    // { name: "Contact", path: "/contact" },
   ];
 
   // Logic to handle scroll direction
@@ -37,19 +37,22 @@ const Navbar = () => {
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Logo />
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-end items-center">
+        {/* Logo/Brand Area */}
+        {/* <div className="text-2xl font-bold text-red-600">Logo</div> */}
+
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-10 list-none">
           {menu.map((m) => (
-            <li key={m.path}>
-              <a
-                href={`#${m.path.replace("/", "")}`}
-                className="text-gray-700 hover:text-black text-lg no-underline transition-colors"
+            <Link to={m.path}>
+              <p
+                className={`text-gray-700 ${
+                  m.path.includes(location.pathname) && "underline"
+                } hover:text-black text-lg no-underline transition-colors`}
               >
                 {m.name}
-              </a>
-            </li>
+              </p>
+            </Link>
           ))}
         </ul>
 
@@ -70,14 +73,9 @@ const Navbar = () => {
       >
         <ul className="flex flex-col items-center gap-6 py-8">
           {menu.map((m) => (
-            <li key={m.path} onClick={() => setIsMenuOpen(false)}>
-              <a
-                href={`#${m.path.replace("/", "")}`}
-                className="text-xl text-gray-700"
-              >
-                {m.name}
-              </a>
-            </li>
+            <Link to={m.path} onClick={() => setIsMenuOpen(false)}>
+              <span className="text-xl text-gray-700">{m.name}</span>
+            </Link>
           ))}
         </ul>
       </div>
