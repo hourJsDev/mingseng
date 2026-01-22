@@ -1,5 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router";
+
+import photo1 from "../assets/photo/1.jpg"
+import photo2 from "../assets/photo/2.jpg"
+import photo3 from "../assets/photo/3.jpg"
+import photo4 from "../assets/photo/4.jpg"
+
 import metophoum1 from "../assets/metophoum/1.jpg";
 import metophoum2 from "../assets/metophoum/2.jpg";
 import metophoum3 from "../assets/metophoum/3.jpg";
@@ -73,8 +78,44 @@ const Project = () => {
       id: 9,
       name: "Photo Ads",
     },
+    {
+      id: 10,
+      name: "Documentary",
+    },
   ];
   const source = [
+    {
+      src: photo1,
+      categoryId: [3]
+    },
+    {
+      src: photo2,
+      categoryId: [3]
+    },
+    {
+      src: photo3,
+      categoryId: [3]
+    },
+    {
+      src: photo4,
+      categoryId: [3]
+    },
+    {
+      categoryId: [2,10],
+      src: "https://www.youtube.com/embed/El_50xesCck",
+    },
+    {
+      categoryId: [2, 1],
+      src: "https://www.youtube.com/embed/-NycqJOb_tM",
+    },
+    {
+      categoryId: [2, 1],
+      src: "https://www.youtube.com/embed/y7HRG7OazmM",
+    },
+    {
+      categoryId: [2, 1],
+      src: "https://www.youtube.com/embed/ot3aVMCruaQ",
+    },
     {
       categoryId: [2, 1],
       src: "https://www.youtube.com/embed/MR-DVAPjX2M",
