@@ -146,7 +146,7 @@ const Project = () => {
     },
     {
       categoryId: [4, 2],
-      src: "https://www.youtube.com/embed/6v5-x5bGreo",
+      src: "https://www.youtube.com/embed/CdcovM1Klu8",
     },
     {
       categoryId: [5, 2],
